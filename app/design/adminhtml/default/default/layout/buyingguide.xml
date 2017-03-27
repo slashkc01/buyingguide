@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <adminhtml_buyingguide_index>		
+        <reference name="content">
+			<block type="adminhtml/template" template="importexport/import/form/before.phtml" name="import.form.before" alias="form_before"/>
+            <block type="buyingguide/adminhtml_buyingguide_edit" name="buyingguide" />
+			<block type="adminhtml/template" template="importexport/import/form/after.phtml" name="import.form.after" alias="form_after"/>
+        </reference>
+    </adminhtml_buyingguide_index>
+	<adminhtml_buyingguide_validate>
+        <block type="importexport/adminhtml_import_frame_result" template="importexport/import/frame/result.phtml" name="import.frame.result" alias="import_frame_result" output="toHtml"/>
+    </adminhtml_buyingguide_validate>
+</layout>
